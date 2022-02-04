@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div>
+        <h4>Variables, operators,Datatypes</h4>
+        <p id="numVar"></p>
+        <p id="str"></p>
+        <p id="concat"></p>
+    </div>
+    <div>
+        <h4>Object Declaration and Handling</h4>
+        <p id="objectField"></p>
+    </div>
+    <div>
+        <h4>Events in js</h4>
+        <button onclick="events()" onmouseout="events1()" onmouseover="events2()" onkeydown="events3()" id="eventbutton">I'm a Button</button>
+    </div>
+    <!-- Java Script added at the last -->
+    <script type="text/javascript" src="Assets/variableDataTypes.js"></script>
+    <script type="text/javascript">
+        function events() {
+            document.getElementById('eventbutton').style.backgroundColor = 'Red';
+        }
+
+        function events1() {
+            document.getElementById('eventbutton').style.backgroundColor = 'Green';
+        }
+
+        function events2() {
+            document.getElementById('eventbutton').style.backgroundColor = 'Blue';
+        }
+
+        function events3() {
+            document.getElementById('eventbutton').style.backgroundColor = 'Gray';
+
+        }
+    </script>
+</body>
+
+</html>

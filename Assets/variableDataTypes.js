@@ -60,6 +60,20 @@ function factorialNumber() {
     }
 }
 
+function printFibonacci() {
+    const number = 10;
+    let n1 = 0,
+        n2 = 1,
+        nxtnum;
+
+    for (let i = 1; i <= number; i++) {
+        document.getElementById('fibo-series').innerHTML = n1;
+        nxtnum = n1 + n2;
+        n1 = n2;
+        n2 = nxtnum;
+    }
+}
+
 function variableDefinition() {
     var x = 5,
         y = 6,
@@ -102,6 +116,7 @@ function arrayDeclaration() {
     kilometersToMiles();
     checkNumbers();
     factorialNumber();
+    printFibonacci();
     variableDefinition();
     ObjectDeclaration();
     arrayDeclaration();

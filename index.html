@@ -11,6 +11,34 @@
 
 <body>
     <div>
+        <h4>Printing Hellow World</h4>
+        <p id="print-hw"></p>
+    </div>
+    <div>
+        <h4>Print Sum of Integers</h4>
+        <p id="Sum-integers"></p>
+    </div>
+    <div>
+        <h4>SquareRoot of a number</h4>
+        <p id="sqrt-num"></p>
+    </div>
+    <div>
+        <h4>Area of Triangle</h4>
+        <p id="area-tri"></p>
+    </div>
+    <div>
+        <h4>Kilometers to Miles</h4>
+        <p id="ki-to-mi"></p>
+    </div>
+    <div>
+        <h4>Checking Negative,Positive or Zero numbers</h4>
+        <p id="check-numbers"></p>
+    </div>
+    <div>
+        <h4>Factorial NUmbers</h4>
+        <p id="fact-num"></p>
+    </div>
+    <div>
         <h4>Variables, operators,Datatypes</h4>
         <p id="numVar"></p>
         <p id="str"></p>
@@ -23,6 +51,11 @@
     <div>
         <h4>Events in js</h4>
         <button onclick="events()" onmouseout="events1()" onmouseover="events2()" onkeydown="events3()" id="eventbutton">I'm a Button</button>
+    </div>
+    <div>
+        <h4>Arrays and Objects in JS</h4>
+        <p id="demo_array"></p>
+        <p id="demo_array1"></p>
     </div>
     <!-- Java Script added at the last -->
     <script type="text/javascript" src="Assets/variableDataTypes.js"></script>
@@ -43,6 +76,11 @@
             document.getElementById('eventbutton').style.backgroundColor = 'Gray';
 
         }
+    </script>
+    <script>
+        const number = [45, 23, 67, 6, 14, 57];
+        number.sort();
+        document.getElementById('demo_array').innerHTML = number;
     </script>
 </body>
 

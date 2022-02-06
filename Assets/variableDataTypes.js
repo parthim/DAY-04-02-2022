@@ -1,6 +1,6 @@
 function printHW() {
-    console.log("Hello World"),
-        document.getElementById('print-hw').innerHTML = "Hello World";
+    // console.log("Hello World"),
+    document.getElementById('print-hw').innerHTML = "Hello World";
 }
 
 function sumOfNumbers() {
@@ -74,6 +74,61 @@ function printFibonacci() {
     }
 }
 
+function cardShuffle() {
+    const suits = ["Spades", "Club", "Diamond", "Heart"];
+    const values = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"];
+
+    let deck = [];
+
+    for (let i = 0; i < suits.length; i++) {
+        for (let x = 0; x < values.length; x++) {
+            let card = { Value: values[x], Suits: suits[i] };
+            deck.push(card);
+        }
+    }
+    for (let i = deck.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * i);
+        let temp = deck[i];
+        deck[i] = deck[j];
+        deck[j] = temp;
+    }
+
+    for (let i = 0; i < 5; i++) {
+        document.getElementById('card-deck').innerHTML = `${deck[i].Value} of ${deck[i].Suits}`;
+    }
+}
+
+function sortAlphabetically() {
+    const string = "I am having a good time";
+    let words = string.split(' ');
+    words.sort();
+    for (const word of words) {
+        document.getElementById('sort-aplh').innerHTML = word;
+        console.log(word);
+    }
+}
+
+function objectCreation() {
+    const person = {
+        name: 'Parthi',
+        age: 24,
+        hoobies: ['Badminton', 'Table Tennis', 'Gaming'],
+        greet: function() {
+            console.log("Hello everyone");
+        },
+        score: {
+            maths: 97,
+            science: 100
+        }
+
+    };
+
+    console.log(person.name);
+    console.log(person.hoobies[0]);
+    console.log(person.score.maths);
+    person.greet();
+};
+
 function variableDefinition() {
     var x = 5,
         y = 6,
@@ -117,6 +172,9 @@ function arrayDeclaration() {
     checkNumbers();
     factorialNumber();
     printFibonacci();
+    cardShuffle();
+    sortAlphabetically();
+    objectCreation();
     variableDefinition();
     ObjectDeclaration();
     arrayDeclaration();

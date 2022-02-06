@@ -58,9 +58,6 @@ function factorialNumber() {
         }
         document.getElementById('fact-num').innerHTML = `The factorial of ${number} is ${fact}.`;
     }
-
-
-
 }
 
 function variableDefinition() {

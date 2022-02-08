@@ -112,7 +112,7 @@ function objectCreation() {
     const person = {
         name: 'Parthi',
         age: 24,
-        hoobies: ['Badminton', 'Table Tennis', 'Gaming'],
+        hobbies: ['Badminton', 'Table Tennis', 'Gaming'],
         greet: function() {
             console.log("Hello everyone");
         },
@@ -124,7 +124,7 @@ function objectCreation() {
     };
 
     console.log(person.name);
-    console.log(person.hoobies[0]);
+    console.log(person.hobbies[0]);
     console.log(person.score.maths);
     person.greet();
 };
@@ -154,7 +154,7 @@ function ObjectDeclaration() {
 }
 
 function arrayDeclaration() {
-    const cars = ["Ferari", "Audi", "BMW"];
+    const cars = ["Ferrari", "Audi", "BMW"];
     let length = cars.length;
     let txt = "<ul>";
     for (var i = 0; i < length; i++) {
